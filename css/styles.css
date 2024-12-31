@@ -1,0 +1,569 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  color: #333;
+  max-width: 1480px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  background-color:black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  object-position: center;
+  
+
+  
+}
+.logo{
+  margin-right: 5px;
+}
+/************************************************** header and nav **********************************************************************/
+.header_and_nav{
+ 
+  top: 0; /* Position it at the top */
+  left: 0;
+  width: 100%; /* Full width */
+}
+
+.navbar {
+ 
+  width: 100%; /* Full width */
+  background-color: #333; /* Background color */
+  padding: 15px 0; /* Padding for the navbar */
+  z-index: 1000; /* Ensure it stays above other elements */
+  
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: left; /* Center the items */
+}
+
+.navbar li {
+  margin: 0 20px; /* Spacing between items */
+}
+
+.navbar a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Change the color of links on hover */
+.navbar ul li a:hover {
+  background-color: #b1d805;
+  color: black;
+}
+.introduction{
+  text-decoration: none;
+ 
+  margin-bottom: 10px;
+  color: #71777d;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: Arial, sans-serif;
+}
+
+.video{
+    width: 100%;
+    height: auto;
+  }
+
+
+/* Main Content */
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+section{
+  margin: 20px ;
+  max-width: 1400px;
+  background-color: #fffdfd;
+  box-shadow: #218838;
+  border-radius: 7px 7px 0 0;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #71777d;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+ 
+}
+section h2{
+  color: #222;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #242424;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  
+  width: 100%;
+  bottom: 0;
+}
+
+/* Service Section */
+.service {
+  margin-bottom: 40px;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+}
+
+.service h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.image_logo{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.photos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.personalTraining{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 80%;
+}
+.membership_photo{
+  object-fit: cover;
+  object-position: center;
+  width: 60%;
+  height: 60%;
+}
+.history_gym_1{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+hr{
+  margin-bottom: 30px;
+}
+.classesOrganization{
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 50%;
+  border-radius: 4%;
+}
+.others_classes{
+align-content: center;
+text-align: center;
+ 
+}
+.photos_career_oportunities{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.compare_membership{
+ display: grid;
+ grid-template-columns: 50%  10%;
+}
+
+/*  style button join us */
+.join_us{
+  background-color: rgb(204, 9, 9);
+  color: white;
+  border: none;
+  height: 34px;
+  width: 105px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity 0.5s;
+ }
+ .join_us:hover{
+  opacity: 0.8;
+ }
+ .join_uss:active{
+  background-color: blueviolet;
+ }
+ /* *************** */
+ .membership-tier{
+  text-decoration: none;
+ 
+  margin-bottom: 10px;
+  color: #71777d;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: Arial, sans-serif;
+}
+ 
+/* first time we need to show less for the paragraph  */
+#more {display: none;}
+
+/* in page contact.html */
+.contact_us{
+  margin-top: 50px;
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.maps_gym{
+  
+  margin-right: 60px;
+ 
+  
+}
+.contact-info{
+margin-left: 20px;
+
+}
+.contact_form {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* using media for  mobile */
+@media (max-width:320px){
+  .photos{
+    display: inline-block;
+   
+    row-gap: 15px;
+    column-gap: 15px;
+    padding: 20px;
+  }
+  .my_logo{
+    width: 40px;
+    height: 40px;
+  }
+  h1{
+    font-size: 16px;
+  }
+  h4{
+    font-size: 16px;
+  }
+}
+
+/** ***************************************************************************************/
+/* Team Section */
+.team h2 {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.team .team-members {
+  display: flex;
+  gap: 30px;
+}
+
+.team .team-member {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+}
+
+.team .team-member img {
+  width: 100%;
+  border-radius: 50%;
+  height: auto;
+}
+
+.team .team-member h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #34495e;
+}
+
+.team .team-member p {
+  color: #7f8c8d;
+}
+
+
+/**********************************************************************************************/
+
+/* Testimonials Sidebar */
+.testimonials {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.testimonials h2 {
+  font-size: 26px;
+  color:coral;
+  margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+  font-size: 18px;
+  color: #8b8d7f;
+  border-left: 5px solid #2c3e50;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.testimonials footer {
+  font-size: 14px;
+  color: #f9fbfb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+
+  .team .team-members {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .team .team-member {
+      width: 80%;
+      margin: 10px 0;
+  }
+
+  .testimonials {
+      margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo h1 {
+      font-size: 22px;
+  }
+
+
+
+  .team .team-member h3 {
+      font-size: 18px;
+  }
+
+  .team .team-member p {
+      font-size: 16px;
+  }
+
+  .testimonials h2 {
+      font-size: 22px;
+  }
+
+  .testimonials blockquote {
+      font-size: 16px;
+  }
+}
+
+/*******************************************************************/
+/* Nutrition Introduction */
+.nutrition-intro h2 {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.nutrition-intro p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+/* Food Categories Section */
+.food-categories {
+  margin-top: 40px;
+}
+
+.food-categories h2 {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.food-category {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.food-category img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.food-category h3 {
+  font-size: 24px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.food-category p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+/* Nutrition Tips Section */
+.nutrition-tips {
+  margin-top: 40px;
+}
+
+.nutrition-tips h2 {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.nutrition-tips ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.nutrition-tips li {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.nutrition-tips li strong {
+  color: #2c3e50;
+}
+
+/************************************************/
+/* Membership Plans Section */
+.membership-plans {
+  margin-bottom: 40px;
+}
+
+.membership-plans h2 {
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.membership-plans p {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.plan {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.plan h3 {
+  font-size: 24px;
+  color: #34495e;
+}
+
+.plan p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.plan .price {
+  font-size: 20px;
+  color: #e74c3c;
+  font-weight: bold;
+}
